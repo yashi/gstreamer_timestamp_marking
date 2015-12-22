@@ -4,7 +4,7 @@ AC_PREREQ([2.53])
 dnl TODO: fill in your package name and package version here
 AC_INIT([rainey],[1.0.0])
 
-AM_INIT_AUTOMAKE([foreign])
+AM_INIT_AUTOMAKE([1.10 foreign])
 
 dnl required versions of gstreamer and plugins-base
 GST_REQUIRED=1.0.0
@@ -12,9 +12,6 @@ GSTPB_REQUIRED=1.0.0
 
 AC_CONFIG_SRCDIR([src])
 AC_CONFIG_HEADERS([config.h])
-
-dnl required version of automake
-AM_INIT_AUTOMAKE([1.10])
 
 dnl enable mainainer mode by default
 AM_MAINTAINER_MODE([enable])
@@ -87,4 +84,3 @@ AC_SUBST(GST_PLUGIN_LDFLAGS)
 
 AC_CONFIG_FILES([Makefile src/Makefile])
 AC_OUTPUT
-
